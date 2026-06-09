@@ -22,7 +22,7 @@
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/imgLogo"
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
+                android:layout_height="200dp"
                 android:src="@drawable/login_logo_ic"
                 android:layout_centerHorizontal="true" />
 
@@ -41,7 +41,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="The VSD Seafood Company!"
-                    android:textColor="@color/menuSelect"
+                    android:textColor="@color/white"
                     android:textStyle="bold"
                     android:textSize="22sp"
                     android:fontFamily="@font/teachers_medium" />

@@ -8,25 +8,43 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@color/loginBg">
-
-        <LinearLayout
-            android:layout_width="130dp"
-            android:layout_height="4dp"
-            android:background="#2a84d8"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="25dp">
-            <View
-                android:layout_width="20dp"
-                android:layout_height="match_parent"
-                android:background="@color/white"/>
-        </LinearLayout>
+        android:background="@color/loginBg"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="25sp"
+            android:layout_weight="1.2"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="4dp"
+                android:background="#2a84d8"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp">
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"/>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/register_logo"
+                android:layout_marginBottom="-15dp"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearBottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:orientation="vertical"
             android:background="@drawable/login_white_round">
             <TextView
@@ -105,13 +123,13 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="15sp"
-                android:layout_marginEnd="15sp"
-                android:layout_marginBottom="25dp">
+                android:layout_height="match_parent">
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="15sp"
+                    android:layout_marginEnd="15sp"
+                    android:layout_marginBottom="25dp"
                     android:layout_alignParentBottom="true">
                     <LinearLayout
                         android:id="@+id/linearLogin"
@@ -163,13 +181,8 @@
             </RelativeLayout>
 
 
-
-
-
         </LinearLayout>
     </LinearLayout>
-
-
 
 
 </layout>

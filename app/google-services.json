@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:902792602427:android:c19ce8783d13efb0a5cd1e",
         "android_client_info": {
-          "package_name": "com.royalit.driverapp"
+          "package_name": "com.seafoods.driverapp"
         }
       },
       "oauth_client": [
@@ -17,7 +17,7 @@
           "client_id": "902792602427-h2jm0im9nn9d99poe4juji6gloqurfeg.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.royalit.driverapp",
+            "package_name": "com.seafoods.driverapp",
             "certificate_hash": "44dcb9a2b68803b43100463d301fd9e63ff05a0a"
           }
         },

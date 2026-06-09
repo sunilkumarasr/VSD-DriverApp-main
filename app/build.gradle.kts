@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.royalit.driverapp"
+    namespace = "com.seafoods.driverapp"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.royalit.driverapp"
+        applicationId = "com.seafoods.driverapp"
         minSdk = 24
         targetSdk = 35
         versionCode = 7

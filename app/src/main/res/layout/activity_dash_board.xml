@@ -34,7 +34,7 @@
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/navigationView"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:background="@color/white"
@@ -42,7 +42,6 @@
             app:itemIconTint="@color/bottom_nav_color_selector"
             app:labelVisibilityMode="labeled"
             app:menu="@menu/bottom_nav_menu"
-            app:itemPaddingTop="5dp"
             app:itemTextAppearanceActive="@style/BottomNavTextAppearance"
             app:itemTextAppearanceInactive="@style/BottomNavTextAppearance" />
 

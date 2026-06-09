@@ -202,8 +202,9 @@
                     android:layout_marginBottom="10dp"
                     android:text="Active Delivery"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:fontFamily="@font/teachers_medium"/>
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/teachers_semibold"/>
                 <LinearLayout
                     android:id="@+id/lnr_no_data"
                     android:layout_width="match_parent"

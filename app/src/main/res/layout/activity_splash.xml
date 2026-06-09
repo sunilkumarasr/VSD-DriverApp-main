@@ -16,7 +16,7 @@
             android:layout_height="200dp"
             android:src="@drawable/logo_top"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="120dp"/>
+            android:layout_marginTop="80dp"/>
 
         <!-- Bike -->
         <androidx.appcompat.widget.AppCompatImageView

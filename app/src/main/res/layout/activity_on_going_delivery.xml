@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".Activitys.OnGoingDeliveryActivity">
@@ -8,40 +7,43 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#f5f6f7">
+        android:background="@color/white">
 
         <LinearLayout
             android:id="@+id/linearTop"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:gravity="center_vertical">
+
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/imgBack"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_marginStart="15dp"
-                android:src="@drawable/back_ic"/>
+                android:src="@drawable/back_ic" />
+
             <TextView
                 android:id="@+id/txt_header"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="Ongoing Delivery"
-                android:textSize="18sp"
                 android:layout_weight="1"
-                android:textColor="@color/black"/>
+                android:text="Ongoing Delivery"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
             <LinearLayout
                 android:id="@+id/lnr_nav"
-                android:visibility="gone"
                 android:layout_width="wrap_content"
-                android:paddingHorizontal="16dp"
+                android:layout_height="wrap_content"
                 android:layout_marginRight="16dp"
-                android:layout_height="wrap_content">
+                android:paddingHorizontal="16dp"
+                android:visibility="gone">
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_navigation"
-                    />
+                    android:src="@drawable/ic_navigation" />
             </LinearLayout>
 
         </LinearLayout>
@@ -49,90 +51,90 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/linearTop"
-            android:layout_above="@+id/linearBottom">
+            android:layout_above="@+id/linearBottom"
+            android:layout_below="@+id/linearTop">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
                     android:layout_marginStart="25dp"
+                    android:layout_marginTop="15dp"
                     android:layout_marginEnd="25dp"
-                    android:text="Active Orders"
                     android:fontFamily="@font/teachers_medium"
+                    android:text="Active Orders"
+                    android:textColor="@color/black"
                     android:textSize="18sp"
-                    android:visibility="gone"
-                    android:textColor="@color/black"/>
+                    android:visibility="gone" />
 
                 <LinearLayout
                     android:id="@+id/lnr_order_address"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
                     android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginEnd="25dp"
-                    android:padding="15dp"
+                    android:background="@drawable/details_round_bg"
                     android:orientation="vertical"
-                    android:background="@drawable/round_white">
+                    android:padding="15dp">
+
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:gravity="center_vertical"
-                        >
+                            android:gravity="center_vertical">
+
                             <androidx.appcompat.widget.AppCompatImageView
                                 android:layout_width="20sp"
                                 android:layout_height="20sp"
                                 android:layout_centerVertical="true"
-                                android:src="@drawable/profile_ic"/>
+                                android:src="@drawable/profile_ic"
+                                android:tint="@color/gray" />
+
                             <TextView
                                 android:id="@+id/txt_name"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="5dp"
-                                android:textSize="18sp"
-                                android:text=""
-                                android:singleLine="true"
                                 android:fontFamily="@font/teachers_medium"
-                                android:textColor="@color/black"/>
+                                android:singleLine="true"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
                         </LinearLayout>
-
-                        <View
-                            android:layout_width="1dp"
-                            android:layout_height="25dp"
-                            android:background="@color/gray"
-                            android:layout_marginEnd="5dp"
-                            android:layout_marginStart="5dp"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="16dp"
-                            android:gravity="right|center_vertical"
-                           >
+                            android:layout_marginTop="5dp">
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="5dp"
-                                android:textSize="18sp"
-                                android:text="ID: "
-                                android:singleLine="true"
                                 android:fontFamily="@font/teachers_regular"
-                                android:textColor="@color/txtHeader"/>
+                                android:singleLine="true"
+                                android:text="Order ID: "
+                                android:textColor="@color/gray"
+                                android:textSize="18sp" />
+
                             <TextView
                                 android:id="@+id/txt_order_id"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textSize="18sp"
-                                android:text=""
-                                android:singleLine="true"
                                 android:fontFamily="@font/teachers_medium"
-                                android:textColor="@color/black"/>
+                                android:singleLine="true"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -140,24 +142,27 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:gravity="center_vertical"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+
                         <androidx.appcompat.widget.AppCompatImageView
                             android:layout_width="20sp"
                             android:layout_height="20sp"
-                            android:layout_gravity="start"
                             android:layout_centerVertical="true"
-                            android:src="@drawable/marker_ic"/>
+                            android:layout_gravity="start"
+                            android:src="@drawable/marker_ic"
+                            android:tint="@color/gray" />
+
                         <TextView
                             android:id="@+id/txt_address"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
-                            android:textSize="18sp"
-                            android:text=""
-                            android:maxLines="3"
                             android:fontFamily="@font/teachers_regular"
-                            android:textColor="@color/txtHeader"/>
+                            android:maxLines="3"
+                            android:text=""
+                            android:textColor="@color/gray"
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -166,96 +171,104 @@
                     android:id="@+id/lnr_call"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:background="@drawable/round_colorprimary_lightedge"
+                    android:layout_gravity="center"
                     android:layout_marginStart="25dp"
-                    android:layout_marginEnd="25dp"
                     android:layout_marginTop="15dp"
-                    android:gravity="center"
-                    android:layout_gravity="center">
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/round_colorprimary_lightedge"
+                    android:gravity="center">
+
                     <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:src="@drawable/ic_call"
-                        android:tint="@color/white"/>
+                        android:tint="@color/white" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
+                        android:fontFamily="@font/teachers_medium"
                         android:text="Call to Customer"
                         android:textColor="@color/white"
-                        android:textSize="16sp"
-                        android:fontFamily="@font/teachers_medium"/>
+                        android:textSize="16sp" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:id="@+id/lnr_take_photo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
                     android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginEnd="25dp"
-                    android:padding="15dp"
+                    android:background="@drawable/round_white"
                     android:orientation="vertical"
-                    android:visibility="gone"
-                    android:background="@drawable/round_white">
+                    android:padding="15dp"
+                    android:visibility="gone">
+
                     <androidx.appcompat.widget.AppCompatEditText
                         android:id="@+id/edit_comment"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/round_edit_gray_light_edge"
                         android:layout_marginStart="10sp"
                         android:layout_marginEnd="10sp"
+                        android:background="@drawable/round_edit_gray_light_edge"
                         android:hint="Add your comments"
-                        android:paddingHorizontal="12dp"
-                        android:textSize="15sp"
-                        android:minLines="2"
-                        android:singleLine="true"
                         android:inputType="text"
                         android:minHeight="60dp"
-                        android:textColorHint="@color/hintcolor"/>
+                        android:minLines="2"
+                        android:paddingHorizontal="12dp"
+                        android:singleLine="true"
+                        android:textColorHint="@color/hintcolor"
+                        android:textSize="15sp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Take photo of item"
                         android:layout_marginTop="12dp"
                         android:fontFamily="@font/teachers_medium"
-                        android:textSize="18sp"
-                        android:textColor="@color/black"/>
+                        android:text="Take photo of item"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="65dp"
+                        android:layout_marginBottom="5dp"
                         android:text="Before hand over to customer item take photos"
-                        android:textSize="14sp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_marginEnd="65dp"
-                        android:textColor="@color/txtHeader"/>
+                        android:textColor="@color/txtHeader"
+                        android:textSize="14sp" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="* 2 photos"
-                        android:textSize="14sp"
                         android:layout_marginTop="5dp"
-                        android:layout_marginBottom="5dp"
                         android:layout_marginEnd="65dp"
-                        android:textColor="@color/txtHeader"/>
+                        android:layout_marginBottom="5dp"
+                        android:text="* 2 photos"
+                        android:textColor="@color/txtHeader"
+                        android:textSize="14sp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
-                        >
+                        android:gravity="center">
+
                         <ImageView
                             android:id="@+id/img_one"
                             android:layout_width="80dp"
-                            android:layout_margin="8dp"
-                            android:layout_height="80dp"/>
+                            android:layout_height="80dp"
+                            android:layout_margin="8dp" />
+
                         <ImageView
                             android:id="@+id/img_two"
                             android:layout_width="80dp"
-                            android:layout_margin="8dp"
-                            android:layout_height="80dp"/>
+                            android:layout_height="80dp"
+                            android:layout_margin="8dp" />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -266,221 +279,238 @@
                             android:id="@+id/linear_take_photo"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:background="@drawable/round_colorprimary_lightedge"
+                            android:layout_gravity="center"
                             android:layout_marginStart="25dp"
-                            android:layout_marginEnd="25dp"
                             android:layout_marginTop="15dp"
+                            android:layout_marginEnd="25dp"
                             android:layout_marginBottom="15dp"
-                            android:gravity="center"
-                            android:layout_gravity="center">
+                            android:background="@drawable/round_colorprimary_lightedge"
+                            android:gravity="center">
+
                             <androidx.appcompat.widget.AppCompatImageView
                                 android:layout_width="18dp"
                                 android:layout_height="18dp"
-                                android:tint="@color/white"
-                                android:src="@drawable/camera_ic"/>
+                                android:src="@drawable/camera_ic"
+                                android:tint="@color/white" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="10dp"
+                                android:fontFamily="@font/teachers_medium"
                                 android:text="Take a Photo"
                                 android:textColor="@color/white"
-                                android:textSize="16sp"
-                                android:fontFamily="@font/teachers_medium"/>
+                                android:textSize="16sp" />
                         </LinearLayout>
                     </LinearLayout>
 
                 </LinearLayout>
 
                 <LinearLayout
-                    android:visibility="gone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="25dp"
-                    android:layout_marginEnd="25dp"
                     android:layout_marginTop="10dp"
-                    android:padding="15sp"
+                    android:layout_marginEnd="25dp"
                     android:background="@drawable/round_white"
                     android:gravity="center_vertical"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="15sp"
+                    android:visibility="gone">
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
-                        android:text="Parking Order"
                         android:fontFamily="@font/teachers_medium"
-                        android:textSize="18sp"
-                        android:textColor="@color/black"/>
+                        android:text="Parking Order"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
-                        android:text="Order ID: OD24654+6"
-                        android:textSize="16sp"
                         android:layout_marginTop="3dp"
-                        android:textColor="@color/txtHeader"/>
+                        android:text="Order ID: OD24654+6"
+                        android:textColor="@color/txtHeader"
+                        android:textSize="16sp" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:id="@+id/lnr_delivered"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/round_colorprimary_lightedge"
                     android:layout_marginStart="25dp"
-                    android:layout_marginEnd="25dp"
                     android:layout_marginTop="15dp"
-                    android:visibility="gone"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/round_colorprimary_lightedge"
                     android:orientation="vertical"
-                    android:padding="10dp">
+                    android:padding="10dp"
+                    android:visibility="gone">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/teachers_semibold"
                         android:text="Delivery Completed"
                         android:textColor="@color/white"
-                        android:textSize="20sp"
-                        android:fontFamily="@font/teachers_semibold"/>
+                        android:textSize="20sp" />
+
                     <TextView
                         android:id="@+id/txt_completed_order_id"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
+                        android:fontFamily="@font/teachers_regular"
                         android:text="Order ID: OD123465"
                         android:textColor="@color/white"
-                        android:textSize="16sp"
-                        android:fontFamily="@font/teachers_regular"/>
+                        android:textSize="16sp" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:id="@+id/lnr_returned"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/red_button"
                     android:layout_marginStart="25dp"
-                    android:layout_marginEnd="25dp"
                     android:layout_marginTop="15dp"
-                    android:visibility="gone"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/red_button"
                     android:orientation="vertical"
-                    android:padding="10dp">
+                    android:padding="10dp"
+                    android:visibility="gone">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/teachers_semibold"
                         android:text="Item(s) Returned"
                         android:textColor="@color/white"
-                        android:textSize="20sp"
-                        android:fontFamily="@font/teachers_semibold"/>
+                        android:textSize="20sp" />
+
                     <TextView
                         android:id="@+id/txt_completed_order_id_returned"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
+                        android:fontFamily="@font/teachers_regular"
                         android:text="Order ID: OD123465"
                         android:textColor="@color/white"
-                        android:textSize="16sp"
-                        android:fontFamily="@font/teachers_regular"/>
+                        android:textSize="16sp" />
                 </LinearLayout>
 
                 <ImageView
                     android:id="@+id/img_photo"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:layout_margin="12dp"
-                    android:visibility="gone"
                     android:layout_gravity="center_horizontal"
-                    />
+                    android:layout_margin="12dp"
+                    android:visibility="gone" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginEnd="25dp"
-                    android:padding="15sp"
-                    android:background="@drawable/round_white"
                     android:gravity="center_vertical"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="15sp">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="25dp"
                         android:gravity="center_vertical">
+
                         <androidx.appcompat.widget.AppCompatImageView
                             android:layout_width="20sp"
                             android:layout_height="20sp"
                             android:layout_centerVertical="true"
-                            android:src="@drawable/bag_ic"/>
+                            android:src="@drawable/bag_ic" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="5dp"
-                            android:textSize="19sp"
-                            android:text="Orders list"
-                            android:singleLine="true"
                             android:fontFamily="@font/teachers_medium"
-                            android:textColor="@color/black"/>
+                            android:singleLine="true"
+                            android:text="Orders list"
+                            android:textColor="@color/black"
+                            android:textSize="19sp" />
+
                         <TextView
                             android:id="@+id/txt_items"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
-                            android:textSize="18sp"
-                            android:text=""
-                            android:singleLine="true"
                             android:fontFamily="@font/teachers_medium"
-                            android:textColor="@color/txtHeader"/>
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/txtHeader"
+                            android:textSize="18sp" />
                     </LinearLayout>
 
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recycler_orders"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_orders"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
                 </LinearLayout>
 
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="15dp"
                     android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginEnd="25dp"
-                    android:padding="15sp"
-                    android:background="@drawable/round_white"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/details_round_bg"
                     android:gravity="center_vertical"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="15sp">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
-                        android:textSize="19sp"
-                        android:text="Bill Details"
-                        android:singleLine="true"
                         android:fontFamily="@font/teachers_medium"
-                        android:textColor="@color/black"/>
+                        android:singleLine="true"
+                        android:text="Bill Details"
+                        android:textColor="@color/black"
+                        android:textSize="19sp" />
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:layout_marginTop="10dp">
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical">
+
                         <androidx.appcompat.widget.AppCompatImageView
                             android:layout_width="20dp"
                             android:layout_height="20dp"
                             android:layout_centerVertical="true"
-                            android:src="@drawable/doc_ic"/>
+                            android:src="@drawable/doc_ic" />
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:layout_gravity="center_vertical"
                             android:layout_marginStart="10dp"
                             android:layout_marginEnd="10dp"
-                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
                             android:orientation="horizontal">
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textSize="14sp"
-                                android:text="Bill Details"
-                                android:singleLine="true"
                                 android:fontFamily="@font/teachers_regular"
-                                android:textColor="@color/black"/>
+                                android:singleLine="true"
+                                android:text="Bill Details"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
                             <TextView
                                 android:id="@+id/txt_saved_price"
                                 android:layout_width="wrap_content"
@@ -489,173 +519,191 @@
                                 android:background="@drawable/round_light_blue"
                                 android:padding="5dp"
                                 android:text="Save ₹0"
-                                android:textSize="13sp"
-                                android:textColor="@color/splashcolor"/>
+                                android:textColor="@color/splashcolor"
+                                android:textSize="13sp" />
                         </LinearLayout>
+
                         <TextView
                             android:id="@+id/txt_price"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginEnd="5dp"
                             android:layout_gravity="center_vertical"
-                            android:textSize="16sp"
-                            android:text=""
-                            android:singleLine="true"
+                            android:layout_marginEnd="5dp"
                             android:fontFamily="@font/teachers_regular"
-                            android:textColor="@color/gray"/>
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/gray"
+                            android:textSize="16sp" />
+
                         <TextView
                             android:id="@+id/txt_bill_amnt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
-                            android:textSize="18sp"
-                            android:text=""
-                            android:singleLine="true"
                             android:fontFamily="@font/teachers_medium"
-                            android:textColor="@color/black"/>
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:layout_marginTop="10dp">
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical">
+
                         <androidx.appcompat.widget.AppCompatImageView
                             android:layout_width="20dp"
                             android:layout_height="20dp"
                             android:layout_centerVertical="true"
-                            android:src="@drawable/truck"/>
+                            android:src="@drawable/truck" />
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:layout_gravity="center_vertical"
                             android:layout_marginStart="10dp"
                             android:layout_marginEnd="10dp"
-                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
                             android:orientation="horizontal">
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textSize="14sp"
-                                android:text="GST Charges"
-                                android:singleLine="true"
                                 android:fontFamily="@font/teachers_regular"
-                                android:textColor="@color/black"/>
+                                android:singleLine="true"
+                                android:text="GST Charges"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
                         </LinearLayout>
+
                         <TextView
                             android:id="@+id/txt_gst_charages"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
-                            android:textSize="18sp"
-                            android:text=""
-                            android:singleLine="true"
                             android:fontFamily="@font/teachers_medium"
-                            android:textColor="@color/black"/>
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:layout_marginTop="10dp">
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical">
+
                         <androidx.appcompat.widget.AppCompatImageView
                             android:layout_width="20dp"
                             android:layout_height="20dp"
                             android:layout_centerVertical="true"
-                            android:src="@drawable/truck"/>
+                            android:src="@drawable/truck" />
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+                            android:layout_gravity="center_vertical"
                             android:layout_marginStart="10dp"
                             android:layout_marginEnd="10dp"
-                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
                             android:orientation="horizontal">
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textSize="14sp"
-                                android:text="Delivery Charges"
-                                android:singleLine="true"
                                 android:fontFamily="@font/teachers_regular"
-                                android:textColor="@color/black"/>
+                                android:singleLine="true"
+                                android:text="Delivery Charges"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
                         </LinearLayout>
+
                         <TextView
                             android:id="@+id/delivery_charges_strike"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginEnd="5dp"
                             android:layout_gravity="center_vertical"
-                            android:textSize="16sp"
-                            android:text="₹49"
-                            android:singleLine="true"
+                            android:layout_marginEnd="5dp"
                             android:fontFamily="@font/teachers_regular"
-                            android:textColor="@color/gray"/>
+                            android:singleLine="true"
+                            android:text="₹49"
+                            android:textColor="@color/gray"
+                            android:textSize="16sp" />
+
                         <TextView
                             android:id="@+id/txt_delivery_charages"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
-                            android:textSize="18sp"
-                            android:text=""
-                            android:singleLine="true"
                             android:fontFamily="@font/teachers_medium"
-                            android:textColor="@color/black"/>
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
                     </LinearLayout>
+
                     <TableRow
-                        android:visibility="gone"
                         android:id="@+id/table_applied"
                         android:layout_width="match_parent"
-                        android:layout_marginTop="12dp"
                         android:layout_height="wrap_content"
-                        android:gravity="center_vertical">
+                        android:layout_marginTop="12dp"
+                        android:gravity="center_vertical"
+                        android:visibility="gone">
+
                         <ImageView
                             android:layout_width="24dp"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="8dp"
                             android:src="@drawable/ic_coupon" />
+
                         <TextView
                             android:id="@+id/txt_amount_coupon"
                             android:layout_width="match_parent"
-                            android:layout_weight="1"
-
                             android:layout_height="wrap_content"
+
+                            android:layout_weight="1"
                             android:text="Coupon Applied"
                             android:textColor="@color/green"
                             android:textStyle="bold" />
 
                     </TableRow>
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
                         android:layout_marginTop="15dp"
                         android:layout_marginBottom="15dp"
-                        android:background="@color/lightGray"/>
+                        android:background="@color/box_border" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center_vertical"
-                        android:layout_marginBottom="10dp">
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:textSize="18sp"
-                            android:text="Grand Total"
-                            android:singleLine="true"
                             android:fontFamily="@font/teachers_medium"
-                            android:textColor="@color/black"/>
+                            android:singleLine="true"
+                            android:text="Grand Total"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
                         <TextView
                             android:id="@+id/txt_total_amnt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
-                            android:textSize="18sp"
-                            android:text=""
-                            android:singleLine="true"
                             android:fontFamily="@font/teachers_medium"
-                            android:textColor="@color/black"/>
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
                     </LinearLayout>
 
 
@@ -673,45 +721,48 @@
             android:background="@drawable/rounded_bottom_sheet">
 
             <LinearLayout
-                android:visibility="gone"
                 android:id="@+id/linearReturned"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="50dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:layout_marginStart="25dp"
-                android:layout_marginEnd="25dp"
                 android:layout_alignParentBottom="true"
-                android:background="@drawable/red_button">
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/red_button"
+                android:visibility="gone">
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:fontFamily="@font/teachers_medium"
                     android:gravity="center"
                     android:text="Returned"
                     android:textColor="@color/white"
-                    android:textSize="15sp"
-                    android:fontFamily="@font/teachers_medium" />
+                    android:textSize="15sp" />
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/linearSubmit"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="50dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
                 android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="25dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
                 android:background="@drawable/round_button">
+
                 <TextView
                     android:id="@+id/txt_order_status"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:fontFamily="@font/teachers_medium"
                     android:gravity="center"
                     android:text="Reached Customer"
                     android:textColor="@color/white"
-                    android:textSize="15sp"
-                    android:fontFamily="@font/teachers_medium" />
+                    android:textSize="15sp" />
             </LinearLayout>
         </LinearLayout>
 

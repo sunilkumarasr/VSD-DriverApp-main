@@ -9,55 +9,62 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@color/loginBg">
+        android:background="@color/white">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp">
+            android:layout_marginStart="25sp"
+            android:layout_marginEnd="25sp"
+            android:layout_marginTop="25dp"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:background="@drawable/details_round_bg">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/teachers_medium" />
+                <LinearLayout
+                    android:layout_width="130dp"
+                    android:layout_height="4dp"
+                    android:gravity=""
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/lightcolorPrimary"
+                    android:layout_gravity="center_horizontal">
+                    <View
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimary"/>
+                </LinearLayout>
+
+            </RelativeLayout>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="25sp"
-                android:text="Back"
-                android:textColor="@color/white"
+                android:text="Add your address"
+                android:textColor="@color/black"
                 android:textSize="17sp"
-                android:fontFamily="@font/teachers_medium" />
-            <LinearLayout
-                android:layout_width="130dp"
-                android:layout_height="4dp"
-                android:background="#2a84d8"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true">
-                <View
-                    android:layout_width="80dp"
-                    android:layout_height="match_parent"
-                    android:background="@color/white"/>
-            </LinearLayout>
+                android:fontFamily="@font/teachers_semibold" />
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="you can change this information later"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:fontFamily="@font/teachers_regular" />
 
-        </RelativeLayout>
+        </LinearLayout>
 
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="25sp"
-            android:layout_marginEnd="25sp"
-            android:layout_marginTop="25sp"
-            android:text="Add your address"
-            android:textColor="@color/white"
-            android:textSize="17sp"
-            android:fontFamily="@font/teachers_semibold" />
-        <TextView
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="25sp"
-            android:layout_marginEnd="25sp"
-            android:layout_marginTop="5dp"
-            android:text="you can change this information later"
-            android:textColor="@color/white"
-            android:textSize="15sp"
-            android:fontFamily="@font/teachers_regular" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -74,6 +81,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:scrollbars="none"
                     android:orientation="vertical">
 
                     <TextView
