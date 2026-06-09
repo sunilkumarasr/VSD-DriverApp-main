@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Logins.OTPActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/loginBg">
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="4dp"
+            android:background="#2a84d8"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp">
+            <View
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25sp"
+            android:orientation="vertical"
+            android:background="@drawable/login_white_round">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25sp"
+                android:layout_marginEnd="25sp"
+                android:layout_marginTop="25sp"
+                android:text="Verification Code"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:fontFamily="@font/teachers_semibold" />
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25sp"
+                android:layout_marginEnd="25sp"
+                android:layout_marginTop="5dp"
+                android:text="We have sent the verification code to your phone number"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:fontFamily="@font/teachers_regular" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:id="@+id/txt_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25sp"
+                    android:layout_marginEnd="15sp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/teachers_regular" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_edit"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/edit_ic"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="25sp"
+                android:layout_marginEnd="15sp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/round_edit_gray_light_edge">
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@null"
+                        android:id="@+id/pinEdit1"
+                        android:fontFamily="sans-serif"
+                        android:ems="1"
+                        android:gravity="center"
+                        android:inputType="phone"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="2dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/round_edit_gray_light_edge">
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@null"
+                        android:id="@+id/pinEdit2"
+                        android:fontFamily="sans-serif"
+                        android:ems="1"
+                        android:gravity="center"
+                        android:inputType="phone"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="2dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/round_edit_gray_light_edge"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/pinEdit3"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@null"
+                        android:ems="1"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:hint="0"
+                        android:inputType="phone"
+                        android:maxLength="1"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="2dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/round_edit_gray_light_edge">
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@null"
+                        android:id="@+id/pinEdit4"
+                        android:fontFamily="sans-serif"
+                        android:ems="1"
+                        android:gravity="center"
+                        android:inputType="phone"
+                        android:maxLength="1"
+                        android:hint="0"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="2dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_resend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="15dp"
+                android:text="Resend Code"
+                android:textColor="@color/green"
+                android:textSize="17sp"
+                android:fontFamily="@font/teachers_medium" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="25dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true">
+                    <LinearLayout
+                        android:id="@+id/linearVerify"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:gravity="center_horizontal"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/round_button">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="Continue"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"
+                            android:fontFamily="@font/teachers_medium" />
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/right_arrow"
+                            app:tint="@color/white"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="5dp"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>

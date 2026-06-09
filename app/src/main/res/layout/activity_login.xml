@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Logins.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/loginBg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:padding="25dp"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/login_logo_ic"
+                android:layout_centerHorizontal="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Be a "
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/teachers_regular" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The VSD Seafood Company!"
+                    android:textColor="@color/menuSelect"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/teachers_medium" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Delivery Partner"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:fontFamily="@font/teachers_regular" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="25dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/login_white_round">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25sp"
+                android:layout_marginEnd="25sp"
+                android:textAlignment="center"
+                android:text="Log in to access your account and track your delivery's"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:fontFamily="@font/teachers_semibold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:background="@drawable/round_edit_gray_light_edge">
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    app:ccp_showArrow="true"
+                    app:ccp_showFlag="true"
+                    app:ccp_showNameCode="false"
+                    app:ccp_autoFormatNumber="true"
+                    app:ccp_showPhoneCode="true"
+                    app:ccp_showFullName="false"
+                    app:ccp_textSize="13sp"
+                    app:ccp_arrowSize="13sp"
+                    app:ccpDialog_keyboardAutoPopup="false"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/lightGray"/>
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:hint="Enter phone number"
+                    android:textSize="15sp"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    android:inputType="phone"
+                    android:textColorHint="@color/hintcolor"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLogin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_button">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Send OTP"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/teachers_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Don't have an account?"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/teachers_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/teachers_medium"
+                    android:text="Register Now"
+                    android:textColor="@color/menuSelect"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</layout>

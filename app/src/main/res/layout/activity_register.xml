@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Logins.RegisterActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/loginBg">
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="4dp"
+            android:background="#2a84d8"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp">
+            <View
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25sp"
+            android:orientation="vertical"
+            android:background="@drawable/login_white_round">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25sp"
+                android:layout_marginEnd="25sp"
+                android:layout_marginTop="25sp"
+                android:text="OTP Verification"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:fontFamily="@font/teachers_semibold" />
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25sp"
+                android:layout_marginEnd="25sp"
+                android:layout_marginTop="5dp"
+                android:text="Enter phone number to send one time Password"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:fontFamily="@font/teachers_regular" />
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="25sp"
+                android:layout_marginEnd="25sp"
+                android:text="Phone Number"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:fontFamily="@font/teachers_medium" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="25sp"
+                android:layout_marginEnd="25sp"
+                android:orientation="horizontal"
+                android:background="@drawable/round_edit_gray_light_edge">
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    app:ccp_showArrow="true"
+                    app:ccp_showFlag="true"
+                    app:ccp_showNameCode="false"
+                    app:ccp_autoFormatNumber="true"
+                    app:ccp_showPhoneCode="true"
+                    app:ccp_showFullName="false"
+                    app:ccp_textSize="13sp"
+                    app:ccp_arrowSize="13sp"
+                    app:ccpDialog_keyboardAutoPopup="false"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/lightGray"/>
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:hint="Enter phone number"
+                    android:textSize="15sp"
+                    android:maxLength="10"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:inputType="phone"
+                    android:textColorHint="@color/hintcolor"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="25dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true">
+                    <LinearLayout
+                        android:id="@+id/linearLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="if you have have an account?"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            android:fontFamily="@font/teachers_medium"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:text="Login"
+                            android:textColor="@color/buttonBg"
+                            android:textSize="17sp"
+                            android:fontFamily="@font/teachers_semibold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linearVerify"
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:gravity="center_horizontal"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/round_button">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="Verify"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"
+                            android:fontFamily="@font/teachers_medium" />
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/right_arrow"
+                            app:tint="@color/white"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="5dp"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</layout>

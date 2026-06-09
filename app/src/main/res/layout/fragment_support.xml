@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Fragments.SupportFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="24dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Subject"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:fontFamily="@font/teachers_regular" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:background="@drawable/round_edit_gray_light_edge">
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:gravity="start"
+                    android:background="@null"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:hint="Enter Subject"
+                    android:textSize="15sp"
+                    android:textColorHint="@color/hintcolor"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Message"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:fontFamily="@font/teachers_regular" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:background="@drawable/round_edit_gray_light_edge">
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:gravity="start"
+                    android:background="@null"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:hint="Enter message"
+                    android:textSize="15sp"
+                    android:textColorHint="@color/hintcolor"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Status"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:fontFamily="@font/teachers_regular" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:background="@drawable/round_edit_gray_light_edge">
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrSend"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/round_button">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Send"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/teachers_semibold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

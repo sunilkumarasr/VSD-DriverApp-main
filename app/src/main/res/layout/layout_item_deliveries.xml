@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:background="@drawable/round_lightgray">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+               >
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/profile_ic"/>
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textSize="18sp"
+                    android:text=""
+                    android:singleLine="true"
+                    android:fontFamily="@font/teachers_medium"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:background="@color/txtHeader"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:layout_gravity="right"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textSize="18sp"
+                    android:text="Order ID: "
+                    android:singleLine="true"
+                    android:fontFamily="@font/teachers_regular"
+                    android:textColor="@color/txtHeader"/>
+                <TextView
+                    android:id="@+id/txt_order_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="#112054"
+                    android:singleLine="true"
+                    android:fontFamily="@font/teachers_medium"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_gravity="start"
+                android:layout_centerVertical="true"
+                android:src="@drawable/marker_ic"/>
+            <TextView
+                android:id="@+id/txt_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:text=""
+                android:maxLines="3"
+                android:fontFamily="@font/teachers_regular"
+                android:textColor="@color/txtHeader"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearViewDetails"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_edge_menucolor">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="View details"
+                android:fontFamily="@font/teachers_medium"
+                android:textColor="@color/menuSelect"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

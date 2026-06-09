@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.DeliveriesFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:paddingTop="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginBottom="10dp">
+            <LinearLayout
+                android:id="@+id/lnr_active"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/round_menucolor">
+                <CheckedTextView
+                    android:id="@+id/txt_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Active Deliveries"
+                    android:textColor="@drawable/color_selector"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:checked="true"
+                    android:singleLine="true"
+                    android:background="@drawable/bg_selector"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/teachers_regular"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lnr_completed"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginStart="5dp"
+               >
+                <CheckedTextView
+                    android:id="@+id/txt_completed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Completed Deliveries"
+                    android:textColor="@drawable/color_selector"
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_selector"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+
+                    android:fontFamily="@font/teachers_regular"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lnr_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="No Orders Yet"
+                android:textColor="@drawable/color_selector"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:checked="true"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:fontFamily="@font/teachers_regular"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_orders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            />
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Logins.AddYourAddressActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/loginBg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25sp"
+                android:text="Back"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:fontFamily="@font/teachers_medium" />
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="4dp"
+                android:background="#2a84d8"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+                <View
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25sp"
+            android:layout_marginEnd="25sp"
+            android:layout_marginTop="25sp"
+            android:text="Add your address"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:fontFamily="@font/teachers_semibold" />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25sp"
+            android:layout_marginEnd="25sp"
+            android:layout_marginTop="5dp"
+            android:text="you can change this information later"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:fontFamily="@font/teachers_regular" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25sp"
+            android:padding="25dp"
+            android:orientation="vertical"
+            android:background="@drawable/login_white_round">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/linearVerify">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Flat / House no / Building name*"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/teachers_medium" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/round_edit_gray_light_edge">
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edit_house"
+                            android:imeOptions="actionNext"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:layout_marginStart="10sp"
+                            android:layout_marginEnd="10sp"
+                            android:hint="Enter flat number"
+                            android:textSize="15sp"
+                            android:singleLine="true"
+                            android:textColorHint="@color/hintcolor"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Floor ( Optional )"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/teachers_medium" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/round_edit_gray_light_edge">
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edit_floor"
+                            android:imeOptions="actionNext"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:layout_marginStart="10sp"
+                            android:layout_marginEnd="10sp"
+                            android:hint="Enter house number"
+                            android:textSize="15sp"
+                            android:singleLine="true"
+                            android:textColorHint="@color/hintcolor"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Area / Sector / locality*"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/teachers_medium" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/round_edit_gray_light_edge">
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edit_area"
+                            android:imeOptions="actionNext"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:layout_marginStart="10sp"
+                            android:layout_marginEnd="10sp"
+                            android:hint="Enter area"
+                            android:textSize="15sp"
+                            android:singleLine="true"
+                            android:textColorHint="@color/hintcolor"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Near by landmark ( Optional )"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/teachers_medium" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/round_edit_gray_light_edge">
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edit_landmark"
+                            android:imeOptions="actionNext"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:layout_marginStart="10sp"
+                            android:layout_marginEnd="10sp"
+                            android:hint="Enter near by landmark"
+                            android:textSize="15sp"
+                            android:singleLine="true"
+                            android:textColorHint="@color/hintcolor"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="City"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/teachers_medium" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/round_edit_gray_light_edge">
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edit_city"
+                            android:imeOptions="actionNext"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:layout_marginStart="10sp"
+                            android:layout_marginEnd="10sp"
+                            android:hint="Enter city"
+                            android:textSize="15sp"
+                            android:singleLine="true"
+                            android:textColorHint="@color/hintcolor"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Country"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/teachers_medium" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/round_edit_gray_light_edge">
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edit_country"
+                            android:imeOptions="actionNext"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:layout_marginStart="10sp"
+                            android:layout_marginEnd="10sp"
+                            android:hint="Enter country"
+                            android:textSize="15sp"
+                            android:singleLine="true"
+                            android:textColorHint="@color/hintcolor"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="State"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/teachers_medium" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal"
+                                android:background="@drawable/round_edit_gray_light_edge">
+                                <androidx.appcompat.widget.AppCompatEditText
+                                    android:id="@+id/edit_state"
+                                    android:imeOptions="actionNext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@null"
+                                    android:layout_marginStart="10sp"
+                                    android:layout_marginEnd="10sp"
+                                    android:hint="Enter state"
+                                    android:textSize="15sp"
+                                    android:singleLine="true"
+                                    android:textColorHint="@color/hintcolor"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Zip code"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/teachers_medium" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal"
+                                android:background="@drawable/round_edit_gray_light_edge">
+                                <androidx.appcompat.widget.AppCompatEditText
+                                    android:id="@+id/edit_zipcode"
+                                    android:imeOptions="actionDone"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@null"
+                                    android:layout_marginStart="10sp"
+                                    android:layout_marginEnd="10sp"
+                                    android:hint="Enter zip code"
+                                    android:textSize="15sp"
+                                    android:singleLine="true"
+                                    android:textColorHint="@color/hintcolor"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/linearVerify"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/round_button">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Continue"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/teachers_medium" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/right_arrow"
+                    app:tint="@color/white"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</layout>

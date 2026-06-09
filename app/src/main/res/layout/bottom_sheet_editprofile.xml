@@ -1,0 +1,214 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_bottom_sheet"
+    android:padding="16dp">
+
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="First Name"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:fontFamily="@font/teachers_medium" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:background="@drawable/round_edit_gray_light_edge">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:hint="Enter first name"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:textColorHint="@color/hintcolor"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Last Name"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:fontFamily="@font/teachers_medium" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:background="@drawable/round_edit_gray_light_edge">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:hint="Enter last name"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:textColorHint="@color/hintcolor"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Date of birth"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:fontFamily="@font/teachers_medium" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:background="@drawable/round_edit_gray_light_edge">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_dob"
+android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@null"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:hint="dd-mm-yyyy"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:textColorHint="@color/hintcolor"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/calender_ic"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Phone Number"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:fontFamily="@font/teachers_medium" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:background="@drawable/round_edit_gray_light_edge">
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            app:ccp_showArrow="true"
+            app:ccp_showFlag="true"
+            app:ccp_showNameCode="false"
+            app:ccp_autoFormatNumber="true"
+            app:ccp_showPhoneCode="true"
+            app:ccp_showFullName="false"
+            app:ccp_textSize="13sp"
+            app:ccp_arrowSize="13sp"
+            app:ccpDialog_keyboardAutoPopup="false"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/lightGray"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_mobile"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:editable="false"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:hint="Enter phone number"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:inputType="phone"
+            android:textColorHint="@color/hintcolor"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Blood Group"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:fontFamily="@font/teachers_medium" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:background="@drawable/round_edit_gray_light_edge">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_blood"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:hint="Enter blood group"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:textColorHint="@color/hintcolor"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/linearCancel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_edit_gray_light_edge"
+            android:text="Cancle"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/teachers_regular"
+            android:layout_marginEnd="5dp"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/linearUpload"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_button"
+            android:layout_marginStart="5dp"
+            android:text="Update"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/teachers_regular"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>
